@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/bakasho-libs/core.to_string.svg?branch=master)](https://travis-ci.org/bakasho-libs/core.to_string)
+
 ## core.toString
 
 Convert a value to its string version
