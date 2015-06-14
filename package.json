@@ -1,0 +1,35 @@
+{
+  "name": "core.to_string",
+  "version": "0.0.1",
+  "description": "Convert a value to its string version",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bakasho-libs/core.to_string.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test-node": "./node_modules/.bin/tape test/toString-test.js | ./node_modules/.bin/tap-spec",
+    "test-node-raw": "./node_modules/.bin/tape test/toString-test.js",
+    "test-browser-local": "zuul --local 8080 --ui tape -- ./test/toString-test.js",
+    "test-browser-travis": "zuul -- ./test/toString-test.js"
+  },
+  "author": "Bakasho Team",
+  "license": "MIT",
+  "keywords": [
+    "toString",
+    "to_string"
+  ],
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-jsbeautifier": "^0.2.7",
+    "grunt-contrib-jshint": "^0.11.2",
+    "tap-spec": "^4.0.0",
+    "tape": "^4.0.0",
+    "zuul": "^3.0.0"
+  },
+  "dependencies": {
+    "core.is_null_or_undefined": "git://github.com/bakasho-libs/core.is_null_or_undefined.git",
+    "core.is_string": "git://github.com/bakasho-libs/core.is_string.git"
+  }
+}
